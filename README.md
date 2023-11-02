@@ -1,0 +1,1 @@
+# DJANGO-Shop-Barber-Static
