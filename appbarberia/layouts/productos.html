@@ -1,0 +1,55 @@
+{% extends "app.html" %}
+{% block content %}
+{% load static %}
+<head>
+    <!-- Static/CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style-pro.css' %}">
+</head>
+<main class="container-products">
+    <!-- CARD 1 -->
+    <div class="card">
+        <div class="container-img" >
+            <img class="image img_1" src="{% static './img/minioxidil.png' %}" alt="Zapato Jordan de la marca NIKE">
+        </div>
+        <div class="product-info">
+            <h2 class="product-info-h2">Minioxidil Forte</h2>
+            <p class="product-info-p"> Desde:MK Forte Laboratorio Control contra la Caída del Cabello</p>
+            <div class="price">$99</div>
+            <div class="btn">
+                <button class="buy-btn">Compra Ahora</button>
+            </div>
+        </div>
+    </div>
+    <!-- END CARD 1 -->
+    <!-- CARD 2 -->
+    <div class="card">
+        <div class="container-img" >
+            <img class="image img_2" src="{% static './img/serum.png' %}" alt="Zapato Jordan de la marca NIKE">
+        </div>
+        <div class="product-info">
+            <h2 class="product-info-h2">Cerum Normalize</h2>
+            <p class="product-info-p"> Desde:Normalize Laboratorios cerum aclarante para tu rutina</p>
+            <div class="price">$78</div>
+            <div class="btn">
+                <button class="buy-btn">Compra Ahora</button>
+            </div>
+        </div>
+    </div>
+    <!-- END CARD 2 -->
+    <!-- CARD 3 -->
+    <div class="card">
+        <div class="container-img" >
+            <img class="image img_3" src="{% static './img/gel-limpiador.png' %}" alt="Zapato Jordan de la marca NIKE">
+        </div>
+        <div class="product-info">
+            <h2 class="product-info-h2">Gel Limpiador</h2>
+            <p class="product-info-p"> Desde:The Eucerin Laboratorios gel limpiador para pieles grasas </p>
+            <div class="price">$120</div>
+            <div class="btn">
+                <button class="buy-btn">Compra Ahora</button>
+            </div>
+        </div>
+    </div>
+    <!-- END CARD 3 -->
+</main>
+{% endblock %}

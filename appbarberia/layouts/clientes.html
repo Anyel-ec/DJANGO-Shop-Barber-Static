@@ -1,0 +1,30 @@
+{% extends "app.html" %}
+{% block content %}
+<table class="table table-striped ">
+    <thead>
+    <tr>
+        <th scope="col">DNI</th>
+        <th scope="col">Nombre</td>
+        <th scope="col">Apellido</th>
+        <th scope="col">telefono</th>
+        <th scope="col">Residencia</th>
+    </tr>
+</thead>
+<tbody>
+    {% for cli in clientes %}
+    <tr>
+      <th scope="row">{{ cli.dni }} </th>
+      <td>{{ cli.first_name }} </td>
+      <td>{{ cli.last_name }}</td>
+      <td>{{ cli.phone}}</td>
+      <td>{{ cli.address }}</td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
+<script>
+    $(document).ready(function(){
+        $('#tablaClientes').DataTable();
+    })
+</script>
+{% endblock %}

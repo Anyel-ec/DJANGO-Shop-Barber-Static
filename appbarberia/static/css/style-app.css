@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Yeseva+One&display=swap');
+*{
+    font-family:  sans-serif;
+}
 .sidebar{
     position: fixed;
     top: 0;

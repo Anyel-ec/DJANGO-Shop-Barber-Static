@@ -1,18 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family:sans-serif;
-
-}
-.container{
+.container-products{
     display: flex;
     align-self: center;
     justify-content: center;
     width: 100%;
     gap: 30px;
     box-sizing: border-box;
-
-
 }
 .card{
     background-color: #d4d1d1fe;
@@ -43,12 +35,12 @@ img{
     transform: translate(-.1rem, -3rem) rotate(8deg) ;
     
 }
-.container-img h2{
+.product-info-h2{
     font-size:22px;
     font-weight:600;
     
 }
-.container-img p{
+.product-info-p{
     margin: 6.4;
     font-size: 13px;
     font-weight:600;
@@ -62,8 +54,7 @@ img{
 /* END IMAGE */
 
 /* BUY & CART-ICON*/
-.buy-btn,
-.container-icon{
+.buy-btn{
     display: block;
     padding: 3px;
     border: none;
@@ -88,25 +79,12 @@ img{
 .btn .buy-btn:hover{
     background-color: #504f4f;
 }
-.btn .container-icon{
-    display: grid;
-    background-color: #fff;
-    padding: 16x 16px;
-    border: 1px solid #000;
-    place-items: center;
-    font-size: 30px;
-}
-.bi{
-    font-size: 29px;
-    color: #000000;
-}
 /* BUY & CART-ICON */
 @media (max-width:1000px){
     .container {
         height: auto;
         align-items: center;
         flex-direction: column;
-
     }
     .card{
         margin: 50px 0;
