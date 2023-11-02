@@ -1,0 +1,46 @@
+{% extends "app.html" %}
+{% block content %}
+{% load static %}
+<head>
+    <!-- Static/CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style-bar.css' %}">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<main class="d-flex alig-items-center justify-content-center ">
+				<!-- Componente tarjeta de clientes -->
+				<div class="card rounded" >
+					<img class="barber-img" src="{% static './img/barbero.png' %}" class="card-img-top" alt="barbero">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+				<!-- fin tarjeta de clientes -->
+				<!-- Componente tarjeta de clientes -->
+				<div class="card rounded" >
+					<img class="barber-img" src="{% static './img/barbero2.png' %}" class="card-img-top" alt="barbero">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+				<!-- fin tarjeta de clientes -->    
+				<!-- Componente tarjeta de clientes -->
+				<div class="card rounded" >
+					<img class="barber-img" src="{% static './img/barbero3.png' %}" class="card-img-top" alt="barbero">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<a href="#" class="btn btn-primary">Go somewhere</a>
+					</div>
+				</div>
+				<!-- fin tarjeta de clientes -->
+			</main>
+		</div>
+	</div>
+</body>
+{% endblock %}

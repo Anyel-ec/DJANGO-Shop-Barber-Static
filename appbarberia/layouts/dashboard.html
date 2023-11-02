@@ -1,0 +1,57 @@
+{% extends "app.html" %}
+{% block content %}
+<h1 class="h2"> Dashboard</h1>
+<p>En el siguiente listado se muestran los datos:</p>
+<!-- Inicio de la Fila -->
+<div class="row">
+	<!-- Componente tarjeta de clientes -->
+  	<div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+    	<div class="card">
+      		<h5 class="card-header">Ventas de Agosto</h5>
+      		<div class="card-body">
+        		<h5 class="card-title">{{ clientes }}</h5>
+        		<p class="card-text">10 Agosto del 2023, Ecuador</p>
+        		<p class="card-text text-success">98% y creciendo</p>
+      		</div>
+    	</div>
+    </div>
+    <!-- fin tarjeta de clientes -->
+    <!-- Componente tarjeta de clientes -->
+    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+        <div class="card">
+        	<h5 class="card-header">Ventas</h5>
+        	<div class="card-body">
+        		<h5 class="card-title">2K</h5>
+        		<p class="card-text">10 Agosto del 2023, Ecuador</p>
+        		<p class="card-text text-danger">15% y creciendo</p>
+      		</div>
+    	</div>
+    </div>
+    <!-- fin tarjeta de clientes -->
+    <!-- Componente tarjeta de clientes -->
+ 	<div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+  		<div class="card">
+			<h5 class="card-header">Productos</h5>
+			<div class="card-body">
+				<h5 class="card-title">5K</h5>
+				<p class="card-text">10 Agosto del 2023, Ecuador</p>
+				<p class="card-text text-warning">50% y creciendo</p>
+    		</div>
+  		</div>
+	</div>
+	<!-- fin tarjeta de clientes -->
+  	<!-- Componente tarjeta de clientes -->
+	<div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+		<div class="card">
+			<h5 class="card-header">Usuarios A</h5>
+			<div class="card-body">
+				<h5 class="card-title">200</h5>
+				<p class="card-text">10 Agosto del 2023, Ecuador</p>
+				<p class="card-text text-primary">5% y creciendo</p>
+			</div>
+		</div>
+	</div>
+	<!-- fin tarjeta de clientes -->
+</div>
+<!-- Fin de la fila -->
+{% endblock %}
